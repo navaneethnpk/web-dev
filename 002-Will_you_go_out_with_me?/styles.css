@@ -1,3 +1,4 @@
+/* ChatGPT generated codes */
 body {
     display: flex;
     align-items: center;
@@ -5,24 +6,27 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background: url('night.jpg') center/cover fixed no-repeat;
 }
-
 .container {
     text-align: center;
+    color: #fff; 
 }
-
 h1 {
-    color: #333;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
+h3 {
+    font-style: italic;
+    color: #ccc;
+    letter-spacing: 1px;
+}
 .options {
     margin-top: 20px;
 }
-
 button {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 0 10px;
     cursor: pointer;
     background-color: #4caf50;
@@ -30,12 +34,10 @@ button {
     border: none;
     border-radius: 5px;
 }
-
 #noButton {
     background-color: #e74c3c;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -45,30 +47,29 @@ button {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-content {
-    background-color: #fefefe;
+    background-color: #333; 
     margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 60%;
+    color: #fff; 
 }
-
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
-
 .close:hover,
 .close:focus {
-    color: black;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Responsive Styles */
 @media only screen and (max-width: 600px) {
     button {
         width: 100%;
